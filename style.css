@@ -1,4 +1,142 @@
+/* -------------- */
+/* Most Important */
+/* -------------- */
+
+html {
+     font-size: 16px;
+}
+
+/* Variations of Body */
+/* I learned on chat gpt that screen size for medium, small, and mobile are 1024px, 768px, and 480 px */
 body {
      color: rgb(5, 5, 5);
-     background-color: rgb(252, 252, 252);
+     background-color: rgb(232, 255, 246);
+     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     margin-left: 100px;
+     margin-right: 100px;
+     padding: 0;
+     transition: all .1s ease; /* I am including transition so changing screen size is smooth */
+}
+
+@media screen and (max-width: 1024px) {
+     body {
+          color: rgb(5, 5, 5);
+          background-color: rgb(232, 255, 246);
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          margin: 0;
+          padding: 0;
+          transition: all .1s ease;
+     }
+}
+/* 
+@media screen and (max-width: 768px) {
+     body {
+          color: rgb(5, 5, 5);
+          background-color: rgb(232, 255, 246);
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          margin: 0;
+          padding: 0;
+     }
+}
+
+@media screen and (max-width: 480px) {
+     body {
+          color: rgb(5, 5, 5);
+          background-color: rgb(232, 255, 246);
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          margin: 0;
+          padding: 0;
+     }
+} */
+
+
+/* ------- */
+/* Nav Bar */
+/* ------- */
+
+.header_nav {
+     text-transform: uppercase;
+     font-weight: bold;
+}
+
+
+/* Gained inspiration for navbar from ChatGPT Query "how to make my nav bar centered" */
+.navbar {
+     text-align: center; /* Center the content horizontally */
+     padding-top: 16px;
+     padding-bottom: 16px;
+}
+
+.navbar ul {
+     list-style-type: none;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-around;
+     margin: 0;
+     padding: 0;
+}
+
+/* Hovering for nav bar (creates line) */
+.navbar ul li a {
+     text-decoration: none;
+     border-bottom: 4px solid rgb(232, 255, 246);
+     color: #333; /* Text color for links */
+     padding: 6px 12px;
+     transition: all .1s linear;
+}
+
+.navbar ul li .nav_regular:hover {
+     text-decoration: none;
+     border-bottom: 4px solid rgb(5, 5, 5);
+     color: #333; /* Text color for links */
+     padding: 6px 12px;
+     transition: all .1s linear;
+}
+
+/* Gained inspiration from ChatGPT Query "how to make button colors in CSS" */
+.navbar ul li .contact_button {
+     border: 4px solid rgb(188, 17, 39); /* being smart by creating a "false" border so transition is smooth */
+     background: rgb(188, 17, 39);
+     color: rgb(255, 255, 255);
+     cursor: pointer;
+     padding: 6px 12px;
+     transition: all .1s linear;
+}
+
+.navbar ul li .contact_button:hover {
+     border: 4px solid rgb(5, 5, 5);
+     background: rgb(255, 255, 255);
+     color: rgb(5, 5, 5);     
+     transition: all .1s linear;
+}
+
+.nav_line {
+     border-top: 2px solid rgb(5, 5, 5); /* make just a line */
+     padding-bottom: 32px;
+}
+
+/* ---------- */
+/* All images */
+/* ---------- */
+.nav_image {
+     max-width: 100%;
+}
+
+.logo {
+     height: 80px;
+     width: auto;
+}
+
+.profile {
+     height: 160px;
+     width: auto;
+}
+
+/* ---------- */
+/* All Videos */
+/* ---------- */
+
+#platform_video {
+     max-width: 100%;
 }

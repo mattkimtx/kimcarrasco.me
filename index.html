@@ -6,29 +6,29 @@
     <!-- Took this code and inputted my own from chat gpt. 
          Chat GPT version "<link rel="icon" href="favicon.ico" type="image/x-icon">" -->
     <link rel="icon" href="small_logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto">
 </head>
 <div id="header">
     <header class="header_nav">
-        <nav>
+        <nav class="navbar">
             <ul>
-                <li><a href="#">Meet Matthew and Ale</a></li>
-                <li><a href="#">Platform</a></li>
-                <li><img id="logo"src="logo.png" alt="logo"></li>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a class="nav_regular" href="#">meet us</a></li>
+                <li><a class="nav_regular" href="#">platform</a></li>
+                <li><img class="logo" src="logo.png" alt="logo"></li>
+                <li><a class="nav_regular" href="#">events</a></li>
+                <li><a class="contact_button" href="#">contact us</a></li>
             </ul>
         </nav>
     </header>
+    <div class="nav_line"></div>
 </div>
 <div id="middle">
-    <article class="video">
-        <section id="cvideo">
-            <iframe width="960" height="540"></iframe>
-            <h1>Kim Carrasco, Let's Go!</h1>
-            <input type="text" placeholder="text us anything!">
-            <button>Message Us!</button>
-        </section>
-    </article>
+    <section>
+        <img class="nav_image" src="dartmouth_hall.jpeg" alt="logo">
+        <h1>Kim Carrasco, Let's Go!</h1>
+        <input type="text" placeholder="text us anything!">
+        <button>Message Us!</button>
+    </section>
     <article id="plans">
         <h1 class="sub-headers">What will Matthew and Ale Do?</h1>
         <section class="plan-desc">
@@ -50,13 +50,13 @@
     <article id="meet">
         <section class="bio">
             <h1 class="sub-headers">Meet Matthew</h1>
-            <img src="matthew.jpg" alt="matthew">
+            <img class="profile" src="matthew.jpg" alt="matthew">
             <p> Matthew Kim is a '25 from Austin, Texas studying Computer Science and Chinese and is excited to serve students in DSG. At Dartmouth, he is Co-Chair of Bait and Bullet, plays in the Dartmouth Symphony Orchestra, and is Co-Treasurer of the Korean Students Association. In his free time, he loves to go fishing and take care of his dorm plants!</p>
             <button>Learn More</button>
         </section>
         <section class="bio">
             <h1 class="sub-headers">Meet Ale</h1>
-            <img src="ale.jpg" alt="ale">
+            <img class="profile" src="ale.jpg" alt="ale">
             <p> Alejandra Carrasco is a Dartmouth Student from Lima, Peru. She is a Sociology mod. Latin American and Caribbean Studies and Education major. Alejandra is involved with Magnuson Student Leadership Board, DartUP (Social Entrepreneurship club), Chess Club, Global Issues Scholars, Team director of Dartmouth Women Investment Fund, Vice president of The Women's Network at Dartmouth and Senator at the Student Assembly at Dartmouth. She is also part of the FYSEP community and King Scholars. Before joining Dartmouth, she was former CEO-now Ambassador and CO-Founder of Wawa Laptop, the first eco-friendly laptop made in Peru. Also, she Co-found the NGO AEPEX (Peruvian student's abroad association) to democratize the information for low-income students about the application process to colleges' in the US. </p>
             <button>Learn More</button>
         </section>
@@ -115,7 +115,7 @@
         <h1 class="sub-headers">Read Our Platform</h1>
         <section class="platform">
             <h1>Our Platform</h1>
-            <iframe width="960" height="540"></iframe>
+            <iframe id="platform_video" width="960" height="540"></iframe>
             <p>Read our platform to learn more about what we will do for Dartmouth!</p>
         </section>
         <section class="end-button">
