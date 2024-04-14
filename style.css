@@ -4,6 +4,7 @@
 
 html {
      font-size: 16px;
+     scroll-behavior: smooth; /* taken from chatGPT query "how to make my nav bar link to a lower part of my page" */ 
 }
 
 /* Variations of Body */
@@ -28,27 +29,6 @@ body {
           transition: all .1s ease;
      }
 }
-/* 
-@media screen and (max-width: 768px) {
-     body {
-          color: rgb(5, 5, 5);
-          background-color: rgb(232, 255, 246);
-          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-          margin: 0;
-          padding: 0;
-     }
-}
-
-@media screen and (max-width: 480px) {
-     body {
-          color: rgb(5, 5, 5);
-          background-color: rgb(232, 255, 246);
-          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-          margin: 0;
-          padding: 0;
-     }
-} */
-
 
 /* ------- */
 /* Nav Bar */
@@ -58,7 +38,6 @@ body {
      text-transform: uppercase;
      font-weight: bold;
 }
-
 
 /* Gained inspiration for navbar from ChatGPT Query "how to make my nav bar centered" */
 .navbar {
@@ -116,12 +95,54 @@ body {
      padding-bottom: 32px;
 }
 
-/* ---------- */
-/* All images */
-/* ---------- */
+/* ------------ */
+/* Image Header */
+/* ------------ */
+
+.header_container {
+     width: 100%;
+     /* display: flex; */
+     justify-content: center;
+     align-items: center;
+}
+
 .nav_image {
      max-width: 100%;
 }
+
+.header_container .header_text_container {
+     display: flex;
+     /* align-items: center; */
+     justify-content: center;
+}
+
+.header_container .header_text_container .text_overlay {
+     position: absolute;
+     left: 150px;
+     top: 50%;
+}
+
+.header_container .header_text_container .email_overlay {
+     position: absolute;
+     right: 150px;
+     top: 50%;
+     transform: translateY(-50%);
+     padding: 20px;
+     background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+}
+
+.text-overlay h1 {
+     color:rgb(255, 255, 255);
+     margin: 0;
+     font-size: 36px;
+}
+
+.text-overlay button {
+     margin: 10px 0 0;
+     font-size: 18px;
+}
+ 
+ 
 
 .logo {
      height: 80px;
