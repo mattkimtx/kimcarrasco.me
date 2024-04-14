@@ -137,16 +137,7 @@ body {
      margin-left: 50px;
      margin-right: 50px;
      transition: all .1s linear;
-}
-
-@media screen and (max-width: 1200px) {
-     .bio_container {
-          background-color: rgb(210, 230, 222);
-          height: 900px;
-          margin-left: 50px;
-          margin-right: 50px;
-          transition: all .1s linear;
-     }
+     overflow: scroll;
 }
 
 .center_container {
@@ -177,6 +168,13 @@ body {
      object-fit: cover;
 }
 
+.flex_item_50 .action_items {
+     display: flex;
+     justify-content: center;
+     flex-direction: row;
+     align-items: flex-start;
+}
+
 .flex_item_100 {
      flex: 1; /* Each item takes up equal space */
      padding-bottom: 10px;
@@ -187,6 +185,75 @@ p.flex_item_100 {
      line-height: 2;
      font-size: 16px;
      font-weight: lighter;
+}
+
+/* List elements for Platform */
+ol {
+     margin-left: 80px;
+     padding: 0;
+}
+
+@media screen and (max-width: 1300px) {
+     ol {
+          margin-left: 50px;
+          padding: 0;
+          transition: all .1s linear;
+     }
+      
+}
+
+ol li {
+     margin-bottom: 10px;
+     font-family: Arial, sans-serif;
+     font-size: 16px;
+     line-height: 1.6;
+     font-weight: bold;
+     color: #333; /* Text color */
+}
+
+
+.popup {
+     display: none;
+     border: 4px solid rgb(0, 81, 24); /* being smart by creating a "false" border so transition is smooth */
+     background: rgb(0, 81, 24);
+     color: rgb(255, 255, 255);
+     cursor: pointer;
+     padding: 6px 12px;
+     transition: all .1s linear;
+}
+
+.popup:hover {
+     border: 4px solid rgb(0, 81, 24);
+     background: rgb(255, 255, 255);
+     color: rgb(5, 5, 5);     
+     transition: all .1s linear;
+}
+
+@media screen and (max-width: 1300px) {
+     .row_container .popup {
+          display: block;
+          transition: all .1s linear;
+     }
+     p.flex_item_100:nth-child(3) {
+          display: none;
+          transition: all .1s linear;
+     }
+     .bio_container {
+          background-color: rgb(210, 230, 222);
+          height: 700px;
+          margin-left: 50px;
+          margin-right: 50px;
+          transition: all .1s linear;
+     }
+}
+
+@media screen and (max-width: 1200px) {
+     .hide {
+          display: none;
+     }
+     .google_doc_link .popup {
+          display: block;
+     }
 }
 
 .margin_text {
@@ -203,41 +270,6 @@ p.flex_item_100 {
 
 .row_container h3 {
      font-size: 24px;
-}
-
-.row_container .popup {
-     display: none;
-     border: 4px solid rgb(0, 81, 24); /* being smart by creating a "false" border so transition is smooth */
-     background: rgb(0, 81, 24);
-     color: rgb(255, 255, 255);
-     cursor: pointer;
-     padding: 6px 12px;
-     transition: all .1s linear;
-}
-
-.row_container .popup:hover {
-     border: 4px solid rgb(0, 81, 24);
-     background: rgb(255, 255, 255);
-     color: rgb(5, 5, 5);     
-     transition: all .1s linear;
-}
-
-@media screen and (max-width: 1050px) {
-     .row_container .popup {
-          display: block;
-          transition: all .1s linear;
-     }
-     p.flex_item_100:nth-child(3) {
-          display: none;
-          transition: all .1s linear;
-     }
-     .bio_container {
-          background-color: rgb(210, 230, 222);
-          height: 700px;
-          margin-left: 50px;
-          margin-right: 50px;
-          transition: all .1s linear;
-     }
 }
 
 .sub_header {
@@ -277,7 +309,14 @@ p.flex_item_100 {
      margin-left: 100px;
 }
 
+/* .footer_container {
+     background-color:rgb(43, 128, 69)
+} */
 
+.small_image {
+     width: 700px;
+     height: 100%;
+}
 
 /* ---------- */
 /* All Videos */
