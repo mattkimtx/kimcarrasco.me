@@ -13,9 +13,9 @@ html {
 body {
      color: rgb(5, 5, 5);
      background-color: rgb(232, 255, 246);
-     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-     margin-left: 100px;
-     margin-right: 100px;
+     font-family: "Montserrat", sans-serif;
+     font-weight: 20;
+     margin: 0;
      padding: 0;
      transition: all .1s ease; /* I am including transition so changing screen size is smooth */
 }
@@ -24,7 +24,7 @@ body {
      body {
           color: rgb(5, 5, 5);
           background-color: rgb(232, 255, 246);
-          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          font-family: "Montserrat", sans-serif;
           margin: 0;
           padding: 0;
           transition: all .1s ease;
@@ -60,6 +60,7 @@ body {
 /* Hovering for nav bar (creates line) */
 .navbar ul li a {
      text-decoration: none;
+     font-size: 24px;
      border-bottom: 4px solid rgb(232, 255, 246);
      color: #333; /* Text color for links */
      padding: 6px 12px;
@@ -76,8 +77,8 @@ body {
 
 /* Gained inspiration from ChatGPT Query "how to make button colors in CSS" */
 .navbar ul li .contact_button {
-     border: 4px solid rgb(188, 17, 39); /* being smart by creating a "false" border so transition is smooth */
-     background: rgb(188, 17, 39);
+     border: 4px solid rgb(0, 81, 24); /* being smart by creating a "false" border so transition is smooth */
+     background: rgb(0, 81, 24);
      color: rgb(255, 255, 255);
      cursor: pointer;
      padding: 6px 12px;
@@ -85,15 +86,10 @@ body {
 }
 
 .navbar ul li .contact_button:hover {
-     border: 4px solid rgb(5, 5, 5);
+     border: 4px solid rgb(0, 81, 24);
      background: rgb(255, 255, 255);
      color: rgb(5, 5, 5);     
      transition: all .1s linear;
-}
-
-.nav_line {
-     border-top: 2px solid rgb(5, 5, 5); /* make just a line */
-     padding-bottom: 32px;
 }
 
 /* ------------ */
@@ -102,22 +98,22 @@ body {
 
 .header_container {
      width: 100%;
-     /* display: flex; */
      justify-content: center;
      align-items: center;
 }
 
 .nav_image {
+     border-top: 3px solid rgb(5,5,5);
      max-width: 100%;
 }
 
 .logo:hover {
-     border: 4px solid rgb(161, 249, 215);
+     border-bottom: 4px solid rgb(0, 81, 24);
      transition: 1;
      transition: all .1s linear;
 }
 .logo {
-     border: 4px solid rgb(232, 255, 246);
+     border-bottom: 4px solid rgb(232, 255, 246);
      height: 80px;
      width: auto;
 }
@@ -131,42 +127,154 @@ body {
 /* body */
 /* ---------- */
 
+.margin_body {
+     margin-top: 100px;
+}
+
 .bio_container {
-     border-top: 2px solid rgb(0, 0, 0);
-     margin-top: 50px;
+     background-color: rgb(210, 230, 222);
+     height: 700px;
+     margin-left: 50px;
+     margin-right: 50px;
+     transition: all .1s linear;
+}
+
+@media screen and (max-width: 1200px) {
+     .bio_container {
+          background-color: rgb(210, 230, 222);
+          height: 900px;
+          margin-left: 50px;
+          margin-right: 50px;
+          transition: all .1s linear;
+     }
 }
 
 .center_container {
      display: flex;
      justify-content: center;
-     align-items: center;
-     gap: 100px;
+     align-items: flex-start;
+     /* gap: 50px; */
 }
-
+   
 /* From chatGPT query "how to make flex box of 2x1" */
 .flex_item_50 {
      flex: 1; /* Each item takes up equal space */
-     padding: 20px;
      box-sizing: border-box; /* Include padding in item width */
+     justify-content: center;
      max-width: 50%;
+}
+
+.picture_container {
+     width: 100%;
+     height: 700px;
+     position: relative;
+     overflow: hidden;
+}
+
+.flex_item_50 img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
 }
 
 .flex_item_100 {
      flex: 1; /* Each item takes up equal space */
-     padding: 20px;
+     padding-bottom: 10px;
      box-sizing: border-box; /* Include padding in item width */
+}
+
+p.flex_item_100 {
+     line-height: 2;
+     font-size: 16px;
+     font-weight: lighter;
+}
+
+.margin_text {
+     margin-left: 100px;
+     margin-right: 100px;
 }
 
 .row_containter {
      display: flex;
-     padding-left: 50px;
+     align-items: flex-start;
      flex-direction: row;
      justify-content: center;
+}
+
+.row_container h3 {
+     font-size: 24px;
+}
+
+.row_container .popup {
+     display: none;
+     border: 4px solid rgb(0, 81, 24); /* being smart by creating a "false" border so transition is smooth */
+     background: rgb(0, 81, 24);
+     color: rgb(255, 255, 255);
+     cursor: pointer;
+     padding: 6px 12px;
+     transition: all .1s linear;
+}
+
+.row_container .popup:hover {
+     border: 4px solid rgb(0, 81, 24);
+     background: rgb(255, 255, 255);
+     color: rgb(5, 5, 5);     
+     transition: all .1s linear;
+}
+
+@media screen and (max-width: 1050px) {
+     .row_container .popup {
+          display: block;
+          transition: all .1s linear;
+     }
+     p.flex_item_100:nth-child(3) {
+          display: none;
+          transition: all .1s linear;
+     }
+     .bio_container {
+          background-color: rgb(210, 230, 222);
+          height: 700px;
+          margin-left: 50px;
+          margin-right: 50px;
+          transition: all .1s linear;
+     }
 }
 
 .sub_header {
      color: rgb(35,8,114);
      font-size: 50px;
+}
+
+/* Partially inspired by chatGPT Query "how to make inline-block wider on both sides" */
+.highlight_name {
+     text-decoration: none;
+     display: inline-block;
+     padding: 0 10px;
+     background-color: rgb(35,8,114);
+     color: rgb(232, 255, 246);
+     transition: all .1s linear;
+}
+
+.highlight_name:hover {
+     background-color: rgb(69, 22, 210);
+     color: rgb(232, 255, 246);
+     padding: 0 20px;
+     transition: all .1s linear;
+}
+
+.italic {
+     font-style: italic;
+}
+
+.underline {
+     text-decoration: underline;
+}
+
+.left_container {
+     display: flex;
+     align-items: flex-start;
+     flex-direction: column;
+     margin-left: 100px;
 }
 
 
@@ -177,4 +285,134 @@ body {
 
 #platform_video {
      max-width: 100%;
+}
+
+/* ---------- */
+/* Modal      */
+/* ---------- */
+
+/* Taken from my lab2 Quizapp project */
+
+/* The Modal (background) */
+.modal {
+     display: none; 
+     position: fixed; /* Stay in place */
+     z-index: 1; /* Sit on top */
+     padding-top: 100px; /* Location of the box */
+     left: 0;
+     top: 0;
+     width: 100%; /* Full width */
+     height: 100%; /* Full height */
+     overflow: auto; /* Enable scroll if needed */
+     background-color: rgb(0,0,0); /* Fallback color */
+     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+     position: relative;
+     background-color: #fefefe;
+     margin: auto;
+     padding: 0;
+     width: 70%;
+     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+     -webkit-animation-name: animatetop;
+     -webkit-animation-duration: 0.4s;
+     animation-name: animatetop;
+     animation-duration: 0.4s
+}
+
+.modal_container {
+     margin-left: 20px;
+     margin-right: 20px;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+     from {top:-300px; opacity:0} 
+     to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+     from {top:-300px; opacity:0}
+     to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close, .close1 {
+     color: white;
+     position: absolute;
+     top: 5px;
+     right: 10px;
+     font-size: 28px;
+     font-weight: bold;
+}
+
+.close:hover, .close1:hover,
+.close:focus, .closer1:focus {
+     color: #000;
+     text-decoration: none;
+     cursor: pointer;
+}
+
+.modal-header {
+     padding: 20px 40px;
+     background-color: rgb(0, 81, 24);
+     color: white;
+}
+
+.modal-body{
+     padding: 2px 16px;
+     height: 350px;
+}
+
+.modal_body1 {
+     padding: 2px 16px;
+     height: 450px;
+}
+
+.text_result {
+     display: flex;
+     align-items: center;
+     flex-direction: row;
+     justify-content: center;
+     line-height: 2;
+     font-weight: lighter;
+}
+
+.modal-footer {
+     padding: 20px 40px;
+     background-color: rgb(0, 81, 24);
+     color: white;
+}
+
+/* -------------------- ---------- ---------- ---------- ----------  */
+/* Carousel (3rd) https://css-tricks.com/css-only-carousel/      */
+/* ------------------- ---------- ---------- ---------- ---------- - */
+
+* {
+     -webkit-box-sizing: border-box;
+     box-sizing: border-box;
+}
+
+.gallery {
+     background: #EEE;
+}
+
+.gallery-cell {
+     width: 66%;
+     height: 200px;
+     margin-right: 10px;
+     background: #8C8;
+     counter-increment: gallery-cell;
+}
+
+/* cell number */
+.gallery-cell:before {
+     display: block;
+     text-align: center;
+     content: counter(gallery-cell);
+     line-height: 200px;
+     font-size: 80px;
+     color: white;
 }

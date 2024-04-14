@@ -2,161 +2,203 @@
 <head>
     <title>Kim Carrasco 2024</title>
     <link href="style.css" rel="stylesheet">
+    <link href="flickity.css" rel="stylesheet" media="screen">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- Took this code and inputted my own from chat gpt. 
          Chat GPT version "<link rel="icon" href="favicon.ico" type="image/x-icon">" -->
     <link rel="icon" href="small_logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto">
+    <!-- From https://www.w3schools.com/icons/tryit.asp?filename=tryicons_fa-instagram -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<div id="header">
-    <header class="header_nav">
-        <nav class="navbar">
-            <ul>
-                <li><a class="nav_regular" href="#meet">meet us</a></li>
-                <li><a class="nav_regular" href="#events">events</a></li>
-                <li>
-                    <a href="https://www.instagram.com/kimcarrasco2024/">
-                        <img class="logo" src="logo.png" alt="logo">
-                    </a>
-                </li>
-                <li><a class="nav_regular" href="#platform">platform</a></li>
-                <li><a class="contact_button" href="#">contact us</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="nav_line"></div>
-    <section class="header_container">
-        <img class="nav_image" src="main.jpg" alt="logo">
-    </section>
-</div>
-<body id="middle">
+
+<header>
+    <div id="header">
+        <header class="header_nav">
+            <nav class="navbar">
+                <ul>
+                    <li><a class="nav_regular" href="#meet">meet us</a></li>
+                    <li><a class="nav_regular" href="#platform">platform</a></li>
+                    <li>
+                        <a href="https://www.instagram.com/kimcarrasco2024/">
+                            <img class="logo" src="logo.png" alt="logo">
+                        </a>
+                    </li>
+                    <li><a class="nav_regular" href="#events">events</a></li>
+                    <li><a class="contact_button" href="#">contact us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="header_container">
+            <img class="nav_image" src="main.jpg" alt="logo">
+        </section>
+    </div>
+</header>
+<body>
+    <div class="margin_body"></div>
     <article id="meet">
         <section class="bio_container">
             <div class="center_container">
-                <h1 class="sub_header">Meet Matthew</h1>
-            </div>
-            <div class="center_container">
-                <img class="flex_item_50" src="matthew.jpg" alt="matthew">
                 <div class="flex_item_50">
-                    <div class="row_container">
-                        <h3>About Me</h3>
-                            <p class="flex_item_100"> Matthew Kim is a '25 from Austin, Texas studying Computer Science and Chinese and is excited to serve students in DSG. At Dartmouth, he is Co-Chair of Bait and Bullet, plays in the Dartmouth Symphony Orchestra, and is Co-Treasurer of the Korean Students Association. In his free time, he loves to go fishing and take care of his dorm plants!</p>      
-                        <h3>My Experience</h3>
-                            <p class="flex_item_100">text</p>
-                        <h3>Why I want to Run</h3>
-                            <p class="flex_item_100">text</p>
+                    <div class="margin_text">
+                        <div class="row_container">
+                            <!-- The inspiration for span was from the chatGPT query "how to make 'Matthew' highlighted and link to a website" -->
+                            <h1 class="sub_header">Meet <a class="highlight_name" href="https://www.instagram.com/_math_u_/">Matthew</a></h1> 
+                            <p class="flex_item_100"> 
+                                My name is Matthew Kim, and I'm a '25 from Austin, TX studying Computer Science and Chinese and I have been a DSG senator since freshman year. Besides Student Government I am also the co-chair of Bait and Bullet in the DOC, and I love to go fishing.
+                            </p>      
+                            <p class="flex_item_100">
+                                I am proud to say I helped spearhead free laundry on campus and hosted the first late night at Foco! Currently, I am the co-chair of the Student Government Student Life Committee where we are advocating for better dining options for everyone.
+                                I really care about every student at Dartmouth, and I believe that I have the skills and experience to lead Student Government next year.
+                            </p>
+                            <button class="popup" id="popup_1">See More</button>
+                        </div>
                     </div> 
                 </div>
-            </div>
-            <!-- Inspiration from chatGPT "how do I link a button" -->
-            <a href="https://www.instagram.com/_math_u_/"> 
-                <button>Follow on Instagram!</button>
-            </a>
-        </section>
-        <section class="bio_container">
-            <div class="center_container">
-                <h1 class="sub_header">Meet Ale</h1>
-            </div>
-            <div class="center_container">
-                <img class="flex_item_50" src="ale.jpg" alt="ale">
                 <div class="flex_item_50">
-                    <div class="row_container">
-                        <h3>About Me</h3>
-                            <p class="flex_item_100">Alejandra Carrasco is a Dartmouth Student from Lima, Peru. She is a Sociology mod. Latin American and Caribbean Studies and Education major. Alejandra is involved with Magnuson Student Leadership Board, DartUP (Social Entrepreneurship club), Chess Club, Global Issues Scholars, Team director of Dartmouth Women Investment Fund, Vice president of The Women's Network at Dartmouth and Senator at the Student Assembly at Dartmouth. She is also part of the FYSEP community and King Scholars. Before joining Dartmouth, she was former CEO-now Ambassador and CO-Founder of Wawa Laptop, the first eco-friendly laptop made in Peru. Also, she Co-found the NGO AEPEX (Peruvian student's abroad association) to democratize the information for low-income students about the application process to colleges' in the US. </p>
-                        <h3>My Experience</h3>
-                            <p class="flex_item_100">text</p>
-                        <h3>Why I want to Run</h3>
-                            <p class="flex_item_100">text</p>
+                    <div class="picture_container">
+                        <img src="matthew.jpg" alt="matthew">
                     </div>
                 </div>
             </div>
-            <a href="https://www.instagram.com/hrhalejandrac.30/">
-                <button>Learn More</button>
-            </a>
         </section>
-    </article>
-    <article id="plans">
+        <div class="margin_body"></div>
         <section class="bio_container">
             <div class="center_container">
-                <h1 class="sub_header">What will Matthew and Ale Do?</h1>
+                <div class="flex_item_50">
+                    <div class="picture_container">
+                        <img src="ale.jpg" alt="ale">
+                    </div>
+                </div>
+                <div class="flex_item_50">
+                    <div class="margin_text">
+                        <div class="row_container">
+                            <h1 class="sub_header">Meet <a class="highlight_name" href="https://www.instagram.com/hrhalejandrac.30/">Ale</a></h1> 
+                            <p class="flex_item_100">
+                                My name is Alejandra Carrasco, and I am running for Student Body Vice President! I am a Dartmouth Student from Lima, Peru and am studying Sociology mod. Latin American and Caribbean Studies and Education. 
+                            </p>
+                            <p class="flex_item_100">
+                                On campus, I am involved with the Magnuson Student Leadership Board, DartUP (Social Entrepreneurship club), Chess Club, Global Issues Scholars, Team director of Dartmouth Women Investment Fund, Vice president of The Women's Network at Dartmouth and Senator at the Student Assembly at Dartmouth. I am also part of the FYSEP community and King Scholars.
+                                From my earliest days as a freshman, I eagerly engaged with student government initiatives, recognizing its potential to effect meaningful change on campus. One of the projects that stands out to me is my involvement in the response to the standardized testing policy. 
+                            </p>
+                            <button class="popup" id="popup_2">See More</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <section class="plan-desc">
-                <h1>Dining</h1>
-                <p>We helped bring back late night. Now we want Collis Weekends and more money per dining Swipe</p>
-            </section>
-            <section class="plan-desc">
-                <h1>Mental Health</h1>
-                <p>We are commited to finding other apps and platforms other than UWill that will provide teletherapy. </p>
-            </section>
-            <section class="plan-desc">
-                <h1>Support Student Activism</h1>
-                <p>We promise to support Student Activism from the ground up by hosting more town halls and being more direct towards the administration</p>
-            </section>
-            <section class="end-button">
-                <button>Learn More</button>
-            </section>
         </section>
     </article>
-    <article id="work">
-        <h1 class="sub-headers">What we've done</h1>
-        <section class="what-done">
-            <img src="">
-            <h1>Late Night Dining</h1>
-            <p>Matthew organized the first late night dining in Foco where he ordered 300 pizzas and gained permission to serve them in Dark Side! Following this event, Dartmouth Dining agreed to reopen late night.</p>
-            <img src="">
-            <h1>Free Laundry</h1>
-            <p>Matthew began the free laundry project in Fall 2022 and helped lead the first few meetings with Residential Operations.</p>
-            <img src="">
-            <h1>(Ale will Insert)</h1>
-            <p>(Ale will Insert)</p>
-            <img src="">
-            <h1>(Ale will Insert)</h1>
-            <p>(Ale will Insert)</p>
+    <div class="margin_body"></div>
+    <article id="platform">
+        <section class="bio_container">
+            <div class="center_container">
+                <div class="flex_item_50">
+                    <div class="center_container">
+                        <h1 class="sub_header">Our <a class="highlight_name" href="https://docs.google.com/document/d/1IZBX_n_TzjczBR75VwMcW4KJbj1o8FcFEOFuhI7Y1zM/edit?usp=sharing">Platform</a></h1>
+                    </div>
+                    <div class="flex_item_50">
+                        <section class="plan-desc">
+                            <h1>Dining</h1>
+                            <p>We helped bring back late night. Now we want Collis Weekends and more money per dining Swipe</p>
+                        </section>
+                        <section class="plan-desc">
+                            <h1>Mental Health</h1>
+                            <p>We are commited to finding other apps and platforms other than UWill that will provide teletherapy. </p>
+                        </section>
+                        <section class="plan-desc">
+                            <h1>Support Student Activism</h1>
+                            <p>We promise to support Student Activism from the ground up by hosting more town halls and being more direct towards the administration</p>
+                        </section>
+                        <section class="end-button">
+                            <button>Learn More</button>
+                        </section>
+                    </div>
+                </div>
+                <iframe class="flex_item_50" src="https://docs.google.com/document/d/e/2PACX-1vSLJukpXATg5FiKelue_JSdqFRnGaP1hJvVusDgs8yn2rNbW_hXpIHma2lp0TsDJTMv7i-AH_M4AW-J/pub?embedded=true" width="100%" height="700"></iframe>
+            </div>
         </section>
-        <section class="end-button">
-            <button>Read More</button>
+    </article>
+    <div class="margin_body"></div>
+    <article id="work">
+        <section class="bio_container">
+            <div class="left_container">
+                <h1 class="sub_header">Our Accomplishments</h1>
+            </div>
+            <section class="what-done">
+                <img src="">
+                <h1>Late Night Dining</h1>
+                <p>Matthew organized the first late night dining in Foco where he ordered 300 pizzas and gained permission to serve them in Dark Side! Following this event, Dartmouth Dining agreed to reopen late night.</p>
+                <img src="">
+                <h1>Free Laundry</h1>
+                <p>Matthew began the free laundry project in Fall 2022 and helped lead the first few meetings with Residential Operations.</p>
+                <img src="">
+                <h1>(Ale will Insert)</h1>
+                <p>(Ale will Insert)</p>
+                <img src="">
+                <h1>(Ale will Insert)</h1>
+                <p>(Ale will Insert)</p>
+            </section>
+            <section class="end-button">
+                <button>Read More</button>
+            </section>
         </section>
     </article>
     <article id="events">
-        <h1 class="sub-headers">Upcoming Events</h1>
-        <section class="event">
-            <h1>Meet and Greet</h1>
-            <p>Meet Matthew and Ale at the Collis Patio</p>
-            <p>April 14th from 12-2pm</p>
-            <button>Add to Calendar</button>
-        </section>
-        <section class="event">
-            <h1>Happy Hour</h1>
-            <p>Join Matthew and Ale on the green for some refreshing food and drinks!</p>
-            <p>April 15th from 4-6pm</p>
-            <button>Add to Calendar</button>
-        </section>
-        <section class="event">
-            <h1>Pizza at Rocky</h1>
-            <p>Matthew and Ale will serve free pizza!</p>
-            <p>April 16th from 9-10pm</p>
-            <button>Add to Calendar</button>
-        </section>
-        <section class="event">
-            <h1>Study Break</h1>
-            <p>Matthew and Ale will be at the library with snacks and drinks!</p>
-            <p>April 17th from 8-10pm</p>
-            <button>Add to Calendar</button>
-        </section>
-        <section class="end-button">
-            <button>See All Events</button>
-        </section>
+        <div class="center_container">
+            <h1 class="sub_header">Upcoming Events</h1>
+        </div>
+        <!-- Taken from ex3 https://css-tricks.com/css-only-carousel/ -->
+        <div class="gallery js-flickity"
+            data-flickity-options='{ "wrapAround": true }'>
+            <div class="gallery-cell"></div>
+            <div class="gallery-cell"></div>
+            <div class="gallery-cell"></div>
+            <div class="gallery-cell"></div>
+            <div class="gallery-cell"></div>
+        </div>
     </article>
-    <article id="platform">
-        <h1 class="sub-headers">Read Our Platform</h1>
-        <section class="platform">
-            <h1>Our Platform</h1>
-            <iframe id="platform_video" width="960" height="540"></iframe>
-            <p>Read our platform to learn more about what we will do for Dartmouth!</p>
-        </section>
-        <section class="end-button">
-            <button>Read More</button>
-        </section>
-    </article>
+    <div id="myModal1" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+            </div>
+                <div class="modal-body">
+                    <p class="text_result">
+                        My name is Matthew Kim, and I'm a '25 from Austin, TX studying Computer Science and Chinese and I have been a DSG senator since freshman year. Besides Student Government I am also the co-chair of Bait and Bullet in the DOC, and I love to go fishing.
+                        I am proud to say I helped spearhead free laundry on campus and hosted the first late night at Foco! Currently, I am the co-chair of the Student Government Student Life Committee where we are advocating for better dining options for everyone.
+                        I really care about every student at Dartmouth, and I believe that I have the skills and experience to lead Student Government next year.
+                    </p>
+                </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+    <div id="myModal2" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close1">&times;</span>
+            </div>
+            <div class="modal_container">
+                <div class="modal-body1">
+                    <p class="text_result">
+                        My name is Alejandra Carrasco, and I am running for Student Body Vice President! I am a Dartmouth Student from Lima, Peru and am studying Sociology mod. Latin American and Caribbean Studies and Education. 
+                        On campus, I am invovled with the Magnuson Student Leadership Board, DartUP (Social Entrepreneurship club), Chess Club, Global Issues Scholars, Team director of Dartmouth Women Investment Fund, Vice president of The Women's Network at Dartmouth and Senator at the Student Assembly at Dartmouth. I am also part of the FYSEP community and King Scholars.
+                        From my earliest days as a freshman, I eagerly engaged with student government initiatives, recognizing its potential to effect meaningful change on campus. One of the projects that stands out to me is my involvement in the response to the standardized testing policy. 
+                    </p>
+                </div>
+            </div>
+            <div class="modal-footer"></div>
+        </div>
+    </div>
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <!-- Using Flickity https://css-tricks.com/creating-responsive-touch-friendly-carousels-with-flickity/ -->
+    <script src="flickity.pkgd.min.js"></script>
 </body>
 <div id="footer">
     <footer>
@@ -181,3 +223,8 @@
     </footer>
 </div>
 </html>
+
+<!-- Inspiration from chatGPT "how do I link a button" -->
+<!-- <a href="https://www.instagram.com/_math_u_/"> 
+    <i class="fa fa-instagram" style="font-size:48px;color:red;"></i>
+</a> -->
