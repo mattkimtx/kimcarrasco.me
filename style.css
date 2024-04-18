@@ -146,7 +146,12 @@ body {
      align-items: flex-start;
      /* gap: 50px; */
 }
-   
+
+.center_container iframe {
+     height: 700px;
+     width: 100%;
+}
+
 /* From chatGPT query "how to make flex box of 2x1" */
 .flex_item_50 {
      flex: 1; /* Each item takes up equal space */
